@@ -12,6 +12,40 @@ Python
 ## Running code
 The notebook is already run and uploaded. The notebook can be re-run by running all the cells again.
 
+## Sub-problems
+The following sub-problem is mainly focused upon. However, To suggest an end-to-end model, I have discussed the other parts or sub-problems as well. More details below: 
+
+```
+Create a scalable data store to store misinformation and hate speech content. 
+Considerations: What kind of data store to use? What format/schema to store 
+data in so we can easily match against other other content from social media
+platforms? How to make the system efficient in terms of storage and/or performance?
+```
+
+Outline:
+```
+Create a scalable data store to store misinformation and hate speech content. 
+Considerations: What kind of data store to use?
+```
+
+Described and provided a proof-of-concept approach to store the misinformation and the actual facts in the form of the related keywords. All the relations between the keywords are stored in the data store instead of the actual article which makes it scalable and store only the required information.
+
+```
+What format/schema to store 
+data in so we can easily match against other other content from social media
+platforms?
+```
+
+The data is stored in the form of (keywordA, relation, keywordB, confidence) tuples. Then, the articles and related information can be separately stored in the database. 
+
+It is also easy to match it with other social media platforms since the text from any other social media platform can be processed in the similar way to get the relations and the truth score can be found out.
+
+```
+How to make the system efficient in terms of storage and/or performance?
+```
+
+This method of storing the relations is efficient in terms of performance since all the data need not be processed and the new information can be determined whether it is true or false based on the keywords from the article itself.
+
 As part of this notebook, I describe the following and suggested an approach as a proof-of-concept using bits-and-pieces of python code.
 
 ## How to build high quality ground truth?
@@ -51,3 +85,11 @@ Algorithm for the Trustrank (trustworthy of the sources) can be improved by cons
 1. Number of followers
 2. Frequency of the information delivery
 3. Number of verified correct articles (or percent of correctness)
+
+## Final Steps and Feedback
+
+None of the real and fake Knowledge Graphs are updated once the system figures out the truthness of the information, but instead the verdict can be posted to Twitter.
+
+After a certain period of time (most likely a day), feedback on the verdict can be obtained through the number of likes/retweets of the verdict tweet or based on the general sentiment of the comments on this post.
+
+If the verdict of the information is deemed true, then the relations are updated into the Knowledge Graph.
