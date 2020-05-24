@@ -1,5 +1,10 @@
-# DeviSandeepEndluri
-Trust Labs Internship Challenge
+# Trust Labs Internship Challenge
+
+## Packages
+1. Text analysis tools such as spacy in NLP for keyword detection.
+2. Text mining packages such as BeautifulSoup
+3. Relation Extraction packages such as Reverb, Ollie or OpenNLP by Stanford.
+4. Machine Learning tools (which include Numpy, Pandas, Networkx)
 
 As part of this notebook, I describe the following and suggested an approach as a proof-of-concept using bits-and-pieces of python code.
 
