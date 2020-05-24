@@ -6,6 +6,12 @@
 3. Relation Extraction packages such as Reverb, Ollie or OpenNLP by Stanford.
 4. Machine Learning tools (which include Numpy, Pandas, Networkx)
 
+## Languages
+Python
+
+## Running code
+The notebook is already run and uploaded. The notebook can be re-run by running all the cells again.
+
 As part of this notebook, I describe the following and suggested an approach as a proof-of-concept using bits-and-pieces of python code.
 
 ## How to build high quality ground truth?
