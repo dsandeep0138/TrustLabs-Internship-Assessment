@@ -9,6 +9,9 @@
 ## Languages
 Python
 
+## Frameworks
+Jupyter notebook
+
 ## Running code
 The notebook is already run and uploaded. The notebook can be re-run by running all the cells again.
 
