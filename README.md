@@ -7,7 +7,7 @@
 4. Machine Learning tools (which include Numpy, Pandas, Networkx)
 
 ## Languages
-Python
+Python3
 
 ## Frameworks
 Jupyter notebook
